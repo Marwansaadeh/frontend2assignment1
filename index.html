@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">     
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href=" https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"defer>
+    <link  href="narrow-jumbotron.css" rel="stylesheet"defer>  
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" defer></script>
+    <script src="main.js" defer></script>      
+
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="header clearfix">
+        <nav>
+          
+          </ul>
+        </nav>
+        <h3 class="text-muted">Currency Converter</h3>
+      </div>
+      <div class="jumbotron" class="col-lg-12" >
+        <h3 class="text-muted">Currency Converter</h3>
+        <form id="myform" class="col-lg-12" onload="calculator()">
+            <div class="form-group">
+                <select class="form-control" id="firstvalue"></select>
+
+            </div>
+            <div class="form-group">
+                <input type="number" class="form-control" id="firstvalueamount" min="0.01" step="1">
+
+            </div>
+            <div class="form-group">
+                
+                <select class="form-control" id="secondvalue" onchange="calculator()"></select>
+            </div>
+            <div class="form-group">
+                
+               <label class="form-control" id="secondvalueamount" ></label>
+            </div>
+            <br><br>
+            <button type="submit" class="btn-primary" id="btn">Convert</button>
+        </form>
+      </div>
+
+      <div class="row marketing">
+        <div class="col-lg-12">
+          <h3 class="text-muted">Total</h3>
+         <div id="totalamount">
+         </div>
+        </div>
+        
+      <footer class="footer">
+        <p> &copy; Currency converter 2020</p>
+      </footer>
+
+    </div> 
+  </body>
+</html>
